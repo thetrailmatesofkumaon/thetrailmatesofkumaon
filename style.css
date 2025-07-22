@@ -1,25 +1,22 @@
+/* Reset & Font */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fefefe;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5EFE6; /* Beige background */
+  color: #333333; /* Dark text */
 }
 
 header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  background-color: #2E5339; /* Dark Green */
+  color: white;
+  padding: 1rem 0;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .logo {
@@ -29,72 +26,57 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
-nav ul li a {
+nav a {
+  color: white;
   text-decoration: none;
-  color: #333;
   font-weight: bold;
 }
 
 .hero {
-  background-image: url("banner.jpg");
+  background-image: url('images/banner.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
-  padding: 100px 20px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: white;
+}
+
+.hero-text {
+  background: rgba(46, 83, 57, 0.6); /* semi-transparent green overlay */
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .section {
-  padding: 60px 20px;
-  background-color: #f5f5f5;
+  padding: 4rem 2rem;
+  background-color: #F5EFE6;
 }
 
-.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.service-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.box {
-  background-color: #fff;
-  padding: 20px;
+.services .box {
+  background-color: #A47149; /* Earth brown */
+  color: white;
+  padding: 1rem;
+  margin: 1rem 0;
   border-radius: 8px;
-  width: 200px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-size: 1.1em;
-}
-
-.gallery {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .gallery img {
-  width: 250px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.contact {
-  background-color: #e0f7fa;
-  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 }
 
 footer {
-  background-color: #263238;
+  background-color: #2E5339;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 1rem 0;
 }
