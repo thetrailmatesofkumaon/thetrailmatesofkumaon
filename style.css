@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 .hero {
-  background-image: url("images/banner.jpg");
+  background-image: url("banner.jpg");
   background-size: cover;
   background-position: center;
   color: white;
