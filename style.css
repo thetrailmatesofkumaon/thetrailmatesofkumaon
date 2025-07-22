@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+  margin: 10px;
+}
