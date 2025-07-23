@@ -38,6 +38,10 @@ header {
   height: auto;
 }
 
+.logo a {
+  display: inline-block;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -62,19 +66,21 @@ nav a:hover {
   align-items: flex-end;
   justify-content: center;
   text-align: center;
-  color: white;
-  padding-bottom: 80px; /* for bottom placement */
+  color: #205A3B;
+  padding-bottom: 80px; /* Push text to near bottom */
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem;
   border-radius: 10px;
+  max-width: 90%;
 }
 
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .hero p {
@@ -86,13 +92,30 @@ nav a:hover {
   font-style: italic;
 }
 
-/* Section */
+/* CTA Button */
+.cta-button {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #205A3B;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1a4c32;
+}
+
+/* Sections */
 .section {
   padding: 4rem 0;
 }
 
 .section:nth-child(even) {
-  background-color: #e9f5ee; /* light greenish */
+  background-color: #e9f5ee; /* Light green */
 }
 
 .section h2 {
@@ -160,9 +183,23 @@ footer {
   background-color: #205A3B;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem;
   margin-top: 2rem;
   font-size: 0.9rem;
+}
+
+footer .social-icons {
+  margin-top: 0.5rem;
+}
+
+footer .social-icons a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer .social-icons a:hover {
+  color: #e9f5ee;
 }
 
 /* Responsive */
